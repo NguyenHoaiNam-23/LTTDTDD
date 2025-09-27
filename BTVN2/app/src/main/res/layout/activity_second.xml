@@ -18,12 +18,12 @@
         app:srcCompat="@mipmap/ic_launcher" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edtuser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Username"
+        android:hint="Username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -32,48 +32,48 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edtnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Số điện thoại"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtuser"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtuser"
+        app:layout_constraintTop_toBottomOf="@+id/edtuser"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <EditText
+        android:id="@+id/edtPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Mật khẩu"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText4"
+        app:layout_constraintEnd_toEndOf="@+id/edtnumber"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+        app:layout_constraintStart_toStartOf="@+id/edtnumber"
+        app:layout_constraintTop_toBottomOf="@+id/edtnumber"
         app:layout_constraintVertical_bias="0.013" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/edtPassag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Xác nhận lại mật khẩu"
+        android:inputType="textPassword"
+        android:hint="Xác nhận lại mật khẩu"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="@+id/edtPass"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/edtPass"
+        app:layout_constraintTop_toBottomOf="@+id/edtPass"
         app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Số điện thoại"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
-        app:layout_constraintVertical_bias="0.021" />
 
     <Button
         android:id="@+id/btnTaoTaiKhoan"
@@ -82,10 +82,10 @@
         android:backgroundTint="#3F51B5"
         android:text="Tạo tài khoản"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
+        app:layout_constraintEnd_toEndOf="@+id/edtPassag"
         app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="@+id/editTextText3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        app:layout_constraintStart_toStartOf="@+id/edtPassag"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassag"
         app:layout_constraintVertical_bias="0.552" />
 
     <TextView
@@ -100,6 +100,21 @@
         app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.103" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:text="Trở về"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#FFFFFF" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
