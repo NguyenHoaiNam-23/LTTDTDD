@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Danh sách đội tuyển LMHT</string>
+    <string name="title_team_list">Danh sách đội tuyển LMHT chuyên nghiệp</string>
+    <string name="team_t1">T1</string>
+    <string name="team_geng">GEN.G</string>
+    <string name="team_g2">G2 Esports</string>
+    <string name="team_fnatic">Fnatic</string>
+    <string name="team_blg">Bilibili Gaming</string>
+    <string name="team_tes">Top Esports</string>
+    <string name="team_kt">KT Rolster</string>
+    <string name="team_hle">Hanwha Life Esports</string>
+    <string name="team_al">Anyones Legend</string>
+    <string name="region_kr">LCK</string>
+    <string name="region_cn">LPL</string>
+    <string name="region_eu">LEC</string>
+    <string name="label_region">Khu vực:</string>
+</resources>
